@@ -476,10 +476,6 @@ def convert_reports_to_named_csvs(content_dir: str, reports_json_dir: str, csv_o
     return created
 
 
-# -----------------------------------------------------------
-#   GUI (тёмная тема, more modern)
-# -----------------------------------------------------------
-
 class JsonToCsvApp:
     def __init__(self, master: tk.Tk):
         self.master = master
