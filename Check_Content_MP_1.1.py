@@ -11,9 +11,6 @@ from tkinter import filedialog, messagebox
 import tkinter.ttk as ttk
 from datetime import date
 
-# -----------------------------------------------------------
-#   БАЗОВЫЕ ДИРЕКТОРИИ (для exe и для .py)
-# -----------------------------------------------------------
 
 if getattr(sys, "frozen", False) and hasattr(sys, "executable"):
     BASE_DIR = os.path.dirname(sys.executable)
@@ -33,10 +30,7 @@ if os.name == "nt":
         CREATE_NO_WINDOW = 0
 else:
     CREATE_NO_WINDOW = 0
-
-# -----------------------------------------------------------
-#   ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
-# -----------------------------------------------------------
+    
 
 def normalize_path(path: str) -> str:
     if not path:
